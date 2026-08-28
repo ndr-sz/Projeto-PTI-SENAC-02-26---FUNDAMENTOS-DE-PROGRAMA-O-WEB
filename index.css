@@ -91,7 +91,7 @@ section {
 }
 
 body    {
-    background-image: url(textura.png);
+    background-image: url("images-icons/textura.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
