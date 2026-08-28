@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="images-icons/favicon.ico" type="image/x-icon">
     <title>Serviços de Entrega</title>
   </head>
   <body>
     <header>
       <div class="top">
-        <img src="logo.png" />
-        <div class="titulo-sub">
-          <h1>H&R Express</h1>
+        <img src="images-icons/logo.png" />
+        <div>
+          <h1 id="inicio">H&R Express</h1>
         </div>
         <nav>
           <a href="#inicio">Início</a>
@@ -24,74 +25,79 @@
 
     <main>
       <div class="destaque">
+        <img src="images-icons/motoboy.png" alt="motoboy">
+
         <h1>Sua entrega no destino certo, com rapidez e segurança.</h1>
         <p>
           Atendimento ágil para documentos, volumes de pequeno e médio porte e
           entregas expressas em toda a Grande Florianópolis.
         </p>
-        <button>Solicitar Entrega</button>
-        <img src="ADICIONAR IMAGEM DE ENTREGADOR" />
+        
+          <div class="botoes">
+            <button>Solicitar Entrega</button>
+            <button id="contatos">WhatsApp</button>
+          </div>
       </div>
 
       <section id="servicos">
-        <h2>Serviços</h2>
-
-        <div class="lista-servicos">
+        <h1>Serviços de entrega que somos especializados</h1>
+        
+        <div class="cards">
           <div class="servico">
-            <img
-              src="ADICIONAR IMAGEM PARA ENTREGA DE DOCUMENTOS"
-              alt="Entrega de documentos"
-            />
+            <img src="images-icons/documentos.png" alt="Entrega de documentos" />
             <h3>Documentos</h3>
             <p>Entregas rápidas de documentos.</p>
           </div>
 
           <div class="servico">
-            <img src="ADICIONAR IMAGEM PARA VOLUMES" alt="Entrega de volumes" />
+            <img src="images-icons/volumes.png" alt="Entrega de volumes" />
             <h3>Pequenos e médios volumes</h3>
             <p>Transporte de volumes compátiveis com entrega por moto.</p>
           </div>
 
           <div class="servico">
-            <img
-              src="ADICIONAR IMAGEM PARA ENTREGA EXPRESSA"
-              alt="Entrega expressa"
-            />
+            <img src="images-icons/expressa.png" alt="Entrega expressa" />
             <h3>Entrega Expressa</h3>
             <p>Serviço para entregas com maior urgência.</p>
           </div>
         </div>
       </section>
 
-      <section id="funcionamento">
+      <section id="sobre">
         <h2>Como funciona</h2>
 
         <div class="etapas">
           <div class="etapa">
             <h3>1. Solicite</h3>
-            <p>Entre em contato e informe os dados da entrega.</p>
+            <img src="images-icons/solicite.png" alt="Solicite a entrega">
+            <p>Entre em contato pelo nosso WhatsApp ou no botão acima e informe os dados da entrega.</p>
           </div>
 
           <div class="etapa">
             <h3>2. Coletamos</h3>
+            <img src="images-icons/coleta.png" alt="Coletamos o pedido">
             <p>Retiramos o item no local combinado.</p>
           </div>
 
           <div class="etapa">
             <h3>3. Entregamos</h3>
-            <p>Realizamos a entrega no destino informado.</p>
+            <img src="images-icons/entrega.png" alt="Entrega do pedido">
+            <p>Realizamos a entrega no destino informado, sempre encaminhando uma foto de comprovação no WhatsApp.</p>
           </div>
         </div>
       </section>
 
-
-
       <footer>
         <section id="rodape">
-            <h2>H&R Express</h2>
-            <p>ADICIONAR TODOS OS DIREITOS RESERVADOS</p>
-            <h2>ADICIONAR LINKS RÁPIDOS</h2>
+          <h2>H&R Express</h2>
+          <p>&copy; 2026 H&R Express. Todos os direitos reservados.</p>
         </section>
+        <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#servicos">Como funciona</a>
+        <a href="#contato">Contato</a>
+      </nav>
       </footer>
     </main>
   </body>

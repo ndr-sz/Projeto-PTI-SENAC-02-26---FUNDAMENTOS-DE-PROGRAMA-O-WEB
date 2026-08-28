@@ -1,7 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+
+    .top {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .top img {
+        width: 220px;
+        max-width: 80%;
+        margin: 0px 35px;
+    }
+
+    .top h1 {
+        text-align: center;
+        margin: 0;
+        font-weight: bold;
+    }
+    .top nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 1px;
+        gap: 0px 20px;
+        margin: px 0 0;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .destaque   {
+        padding: 20px;
+    }
+
+    .destaque img {
+        max-width: 350px;
+    }
+
+    .botoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+   .cards,
+    .etapas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico,
+    .etapa {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
+
 *   {
     font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+body    {
+    background-image: url(textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
 }
 
 .top {
@@ -27,7 +120,9 @@
     }
 
     >img {
-        width: 150px;
+        max-width: 350px;
+        min-width: 150px;
+        width: 100%;
         height: auto;
         margin-left: 50px;
     }
@@ -36,6 +131,7 @@
         display: flex;
         gap: 30px;
         margin: 50px;
+        color: #1565C0;
     }
 
     >nav a {
@@ -50,12 +146,123 @@
 
     >nav a:hover {
         border-color: #1565C0;
+        transform: translateY(-2px);
     }
 
 }
 
-body    {
-    background-image: url(textura.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 30px;
+    gap: 15px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    background-color: #8FA7A8;
+    border-radius: 25px;   
+}
+
+.destaque   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #8FA7A8;
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+
+    >img {
+        position: inherit;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0;
+    }
+
+}
+
+.botoes     {
+   display: flex;
+   gap: 35px;
+}
+
+.destaque button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botoes button:hover {
+    background-color: #8FA7A8;
+    transform: translateY(-2px);
+}
+
+#servicos h1 {
+    text-align: center;
+    
+}    
+
+.servico   {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 13px;
+    width: 100%;
+    max-width: 350px;
+
+
+    >img    {
+        min-width: 170px;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+#sobre {
+    text-align: center;
+    margin: 8%;
+}
+
+.etapas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    height: auto;
+    flex-wrap: wrap;
+    
+
+
+    background-color: #8FA7A8;
+    border-radius: 25px;
+}
+
+.etapa     {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 13px;
+    max-width: 350px;
+    width: 100%; 
+
+    >img {
+        min-width: 170px;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
 }
